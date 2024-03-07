@@ -17,6 +17,7 @@
 - ```pip install -r requirements.txt```
 - ```cd src```
 - ```docker compose -f docker-compose-cache.yaml up -d```
+- ```cp env.template ./.env```
 - ```python manage.py makemigrations```
 - ```python manage.py migrate```
 - ```python manage.py runserver```
