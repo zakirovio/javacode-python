@@ -10,8 +10,8 @@
 
 ## Сборка
 
-- ```git clone ```
-- ```cd my-auth-drf-jwt-redis```
+- ```git clone path```
+- ```cd auth-python-drf```
 - ```python3.12 -m venv venv```
 - ```source ./venv/bin/activate```
 - ```pip install -r requirements.txt```
