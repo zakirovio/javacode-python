@@ -1,29 +1,8 @@
-# Пользовательская аутентификация DRF
-Текущий релиз приложения включает:
-- sqlite3;
-- новая модель пользователей;
-- основные API вьюхи для регистрации и аутентификации
-- аутентификация JWT: SimpleJWT;
-- refresh_token`ы хранятся и передаются через  httpOnly куки;
-- библиотека SimpleJWT предлагает хранение выданных и заблокированных refresh_token`ов в двух разных таблицах;
-- еще не истекшие access_token`ы добавляются в redis-cache после logout;
-
-## Сборка
-
-- ```git clone path```
-- ```cd auth-python-drf```
-- ```python3.12 -m venv venv```
-- ```source ./venv/bin/activate```
-- ```pip install -r requirements.txt```
-- ```cd src```
-- ```docker compose -f docker-compose-cache.yaml up -d```
-- ```cp env.template ./.env```
-- ```python manage.py makemigrations```
-- ```python manage.py migrate```
-- ```python manage.py runserver```
-
-## Тесты
-- ```python manage.py test tests```
-
-### Ссылка на следующий релиз
-```https://github.com/zakirovio/{repo}/releases/tag/{None}```
+# javacode-python
+## Собираем
+* ```git clone git@github.com:zakirovio/javacode-python.git```
+* ```cd javacode-python```
+* Win32: ```python -m venv .venv``` или Unix: ```python3 -m venv .venv```
+* Аналогично: ```.venv\Scripts\activate``` или ```source ./.venv/bin/activate```
+* ```pip install -r requirements.txt```
+* ```далее нужно создать .env файл, скопировав переменные окружения из .env.template```
