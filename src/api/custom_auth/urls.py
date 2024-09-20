@@ -1,4 +1,4 @@
-from api.my_auth.views import LoginView, SignupView, TestView, LogoutView, CustomRefreshView
+from api.custom_auth.views import LoginView, SignupView, TestView, LogoutView, CustomRefreshView
 from django.urls import path
 
 

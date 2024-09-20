@@ -1,5 +1,6 @@
 from django.contrib import admin
-from api.my_auth.models import User
+from api.custom_auth.models import User
+
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):

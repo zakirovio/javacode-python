@@ -1,7 +1,7 @@
-from api.my_auth.serializers import (
+from api.custom_auth.serializers import (
     UserSerializer, LoginExtraDataSerializer, CustomRefreshSerializer, CustomBlacklistSerializer
 )
-from api.my_auth.utils import check_access_token
+from api.custom_auth.utils import check_access_token
 from django.contrib.auth import authenticate
 from django.conf import settings
 from django.core.cache import caches

@@ -5,8 +5,8 @@ from rest_framework import status
 from rest_framework.test import APITestCase
 from rest_framework_simplejwt.tokens import AccessToken, RefreshToken
 from rest_framework_simplejwt.token_blacklist.models import BlacklistedToken
-from api.my_auth.models import User
-from tests.my_auth import credentials
+from api.custom_auth.models import User
+from tests.custom_auth import credentials
 
 
 class UserTests(APITestCase):
@@ -86,6 +86,3 @@ class TokenTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data.get("message"), "Remove access token from local storage!")
         self.assertEqual(response.data.get("code"), "redirectToLogin")
-
-    def test_refresh(self):
-        ...
