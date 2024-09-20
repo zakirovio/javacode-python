@@ -9,7 +9,7 @@
 * Клонруем ```git clone git@github.com:zakirovio/javacode-python.git```
 * Переход в директорию проекта ```cd javacode-python```
 * далее нужно создать ```.env``` файл, скопировав переменные окружения из ```.env.template```
-* Сборка и запуск контейнеров ```docker compose -f docker-compose-main.yaml -up -d```
+* Сборка и запуск контейнеров ```docker compose -f docker-compose-main.yaml up -d```
 * Запустить тесты ```docker compose -f docker-compose-main.yaml run test```
 * Исходный код в ```src/```
 * Тесты в ```tests/```
